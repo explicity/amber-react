@@ -1,0 +1,16 @@
+# Folders to ignore
+node_modules/*
+.sass-cache/*
+.tmp/*
+
+# OS or Editor folders
+._*
+.cache
+.idea
+*.sublime-project
+*.sublime-workspace
+
+
+# Files
+package-lock.json
+npm-debug.log
