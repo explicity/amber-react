@@ -1,0 +1,54 @@
+.welcome-section {
+    position: relative;
+    margin-top: 122px; 
+
+    &-img {
+        height: calc(100vh - 122px);
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    & .carousel-indicators {
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 1441px) {
+        .container {
+            max-width: 1200px;
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 15px;
+
+    &-header {
+        margin-bottom: 60px;
+
+        h2 {
+            font-size: 5vmax;
+            color: $color-white;        
+    
+            &:first-child {
+                color: $color-secondary;
+                margin-bottom: 15px;   
+            }
+
+        }
+    }
+
+    & .btn {
+        margin: 15px;
+    }
+
+}
+
+.carousel-indicators .active {
+    background-color: $color-secondary;
+}

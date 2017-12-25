@@ -1,0 +1,16 @@
+.title {
+
+    &-section {
+        font-size: 36px;
+        margin-bottom: 50px;
+
+        &:after {
+            @include separator ($color-separator);
+        }
+    }
+
+    &-content {
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+}

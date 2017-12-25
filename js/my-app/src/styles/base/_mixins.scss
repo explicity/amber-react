@@ -1,0 +1,25 @@
+@mixin border-top ($width, $color) {
+    border-top: $width solid $color;
+}
+
+@mixin separator ($color) {
+    border-bottom-color: $color;
+    padding-top: 30px;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    border-bottom-style: inset;    
+    border-bottom-width: 5px;
+}
+
+@mixin pseudo($img, $width, $height) {
+    content: '';
+    background: url($img) no-repeat center center;
+    display: block;
+    width: $width;
+    height: $height;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
