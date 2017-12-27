@@ -2,30 +2,20 @@
 
 @import "./styles/base/variables";
 @import "./styles/base/mixins";
+@import "./styles/base/reset";
 
 @import "./styles/layout/title";
 @import "./styles/layout/btn";
+@import "./styles/layout/icons";
 
 @import "./styles/layout/header";
 @import "./styles/layout/info-section";
 @import "./styles/layout/welcome-section";
 @import "./styles/layout/buy-now";
-
-
-body {
-    font-family: $font-txt;
-    font-weight: $font-light;
-    font-size: 18px;
-}
-
-html, body { 
-  height: 100%;
-
-  a:hover {
-      text-decoration: none;
-  }
-}
-
-.container {
-    max-width: 960px;
-}
+@import "./styles/layout/last-works";
+@import "./styles/layout/features";
+@import "./styles/layout/blockquote";
+@import "./styles/layout/blog-posts";
+@import "./styles/layout/experience";
+@import "./styles/layout/our-team";
+@import "./styles/layout/footer";

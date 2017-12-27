@@ -1,0 +1,111 @@
+.last-works {
+    background: url(./styles/img/bg.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    color: $color-white;
+    padding: 100px 0;
+
+    & .container {
+        max-width: 930px;
+    }
+
+    header {
+        @media (min-width: 768px) {
+            padding: 0 50px;
+        }
+    }
+
+    .list-control {
+        color: $color-white;
+        margin: 0 10px;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+.works-list {
+
+    &-item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        figure {
+            position: relative;
+
+            &:hover {
+
+                .figcaption {
+                    opacity: 0;
+                }
+
+                .links {
+                    opacity: 1;
+                }
+
+                .works-list-img {
+                    filter: blur(2px);
+                }
+            }
+        }
+    }
+
+
+
+    .figcaption {
+        position: absolute;
+        top: 80%;
+        width: 290px;
+        padding: 0 15px;
+        opacity: 1;
+        transition: all 0.5s;
+
+        &-info {
+
+            h4 {
+                color: $color-white;
+                font-size: 14px;
+                margin-top: 2px;
+                margin-bottom: 7px;
+            }
+
+        }
+
+        p {
+            font-size: 11px;
+            color: $color-secondary;
+        }
+
+        & .fa-heart {
+            margin-bottom: 5px;
+            color: $color-white;
+        }
+    }
+}
+
+
+
+.links {
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-main {
+        color: $color-white;
+    }
+
+    &-icon {
+        background-color: $color-secondary;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    &-item {
+        margin-bottom: 10px;
+    }
+}

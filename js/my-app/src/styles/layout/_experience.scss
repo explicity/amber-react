@@ -1,0 +1,90 @@
+.experience {
+    min-height: 100vh;
+    padding: 100px 0;
+    background-color: $color-secondary;
+    color: $color-white;
+
+    &-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .label {
+            font-size: 48px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 991px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.pie-wrapper {
+    font-size: 210px;
+    height: 1em;
+    width: 1em;
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+
+    &.progress-90 {
+
+        & .left-side {
+            transform: rotate(330deg);
+        }
+
+        & .right-side {
+            transform: rotate(180deg);
+        }
+    }
+
+    &.progress-60 {
+
+        & .left-side {
+            transform: rotate(216deg);
+        }
+
+        & .right-side {
+            transform: rotate(180deg);
+        }
+    }
+
+    &.progress-80 {
+
+        & .left-side {
+            transform: rotate(300deg);
+        }
+
+        & .right-side {
+            transform: rotate(180deg);
+        }
+    }
+
+    & .pie {
+        height: 100%;
+        width: 100%;
+        clip: rect(auto, auto, auto, auto);
+        border: 5px solid #35c8bc;
+        border-radius: 50%;
+
+        & .half-circle {
+            height: 100%;
+            width: 100%;
+            border: 5px solid $color-white;
+            border-radius: 50%;
+            clip: rect(0, 0.5em, 1em, 0);
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+    }
+}

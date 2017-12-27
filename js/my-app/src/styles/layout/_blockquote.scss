@@ -1,0 +1,48 @@
+.blockquote {
+    position: relative;
+
+    .container {
+        max-width: 645px;
+    }
+
+    &-main {
+        color: $color-white;
+        line-height: 30px;
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding-top: 80px;
+
+        @media (max-width: 765px) {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+    &-author {
+        color: $color-secondary;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+    }
+
+    &-img {
+        height: 450px;
+        overflow: hidden;
+        object-fit: cover;
+
+        @media (max-width: 765px) {
+            height: calc(100vh - 122px);
+        }
+    }
+
+    & .carousel-indicators {
+        margin-bottom: 50px;
+
+        li {
+            border-radius: 50%;
+            width: 8px;
+            height: 7px;
+        }
+    }
+}

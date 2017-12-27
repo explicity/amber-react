@@ -1,4 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import './include/bootstrap';
+import 'font-awesome/css/font-awesome.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

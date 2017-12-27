@@ -1,0 +1,190 @@
+.icon {
+    position: relative;
+
+        &-quotes:before {
+            content: '';
+            background: url('./styles/img/quotes.png') no-repeat center center;
+            display: block;
+            width: 44px;
+            height: 36px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0);
+        }
+
+        &-comment {
+            position: relative;
+            padding-left: 25px;
+            line-height: 14px !important;
+
+            &:before {
+                transition: 0.3s;
+                @include pseudo ('./styles/img/comment.png', 19px, 14px);
+            }
+       }
+
+       &-dots {
+
+                &:before {
+                    content: '';
+                    background: url(./styles/img/dots.png) no-repeat center center;
+                    display: block;
+                    width: 70px;
+                    height: 10px;
+                    position: absolute;
+                    left: -80%;
+                    top: 50%;
+                    transform: translate(80%, -50%);
+                    @media (max-width: 991px) {
+                        display: none;
+                    }
+
+                }
+
+                &:after {
+                    content: '';
+                    background: url(./styles/img/dots.png) no-repeat center center;
+                    display: block;
+                    width: 70px;
+                    height: 10px;
+                    position: absolute;
+                    left: 180%;
+                    top: 50%;
+                    transform: translate(-180%, -50%);
+                    @media (max-width: 991px) {
+                        display: none;
+                    }
+
+                }
+        }
+
+        &-star:before {
+            @include pseudo('./styles/img/star.png', 38px, 38px);
+        }
+
+        &-winner:before {
+            @include pseudo('./styles/img/winner.png', 35px, 32px);
+        }
+
+        &-stick:before {
+            @include pseudo('./styles/img/stick.png', 31px, 31px);
+        }
+
+        &-cloud:before {
+            @include pseudo('./styles/img/cloud.png', 40px, 25px);
+        }
+
+
+        &-login:before {
+            @include pseudo ('./styles/img/login.png', 14px, 13px);
+        }
+
+        &-register:before {
+            @include pseudo ('./styles/img/regist.png', 14px, 13px);
+        }
+
+        &-wishlist:before {
+            @include pseudo ('./styles/img/wishlist.png', 14px, 12px);
+        }
+
+        &-logout:before {
+            @include pseudo ('./styles/img/logout.png', 12px, 13px);
+        }
+
+        &-basket:after {
+            content: '\f291';
+            font-family: FontAwesome;
+            display: inline-block;
+            color: #ffae00;
+            margin-left: 5px;
+            font-size: 12px;
+            vertical-align: middle;
+        }
+
+        &-address:before {
+            @include pseudo ('./styles/img/address.png', 14px, 13px);
+        }
+
+        &-phone:before {
+            @include pseudo ('./styles/img/phone.png', 13px, 13px);
+        }
+
+        &-email:before {
+            @include pseudo ('./styles/img/email.png', 12px, 9px);
+        }
+
+        &-tweet:before {
+            @include pseudo ('./styles/img/tweet.png', 14px, 13px);
+        }
+
+        &-facebook {
+            position: relative;
+
+            &:before {
+                @include pseudo ('./styles/img/facebook.png', 50px, 50px);
+            }
+        }
+
+        &-twitter {
+            position: relative;
+
+            &:before {
+                @include pseudo ('./styles/img/twitter.png', 50px, 50px);
+            }
+        }
+
+        &-youtube {
+            position: relative;
+
+            &:before {
+                @include pseudo ('./styles/img/youtube.png', 50px, 50px);
+            }
+        }
+
+        &-instagram {
+            position: relative;
+
+            &:before {
+                @include pseudo ('./styles/img/instagram.png', 50px, 50px);
+            }
+        }
+
+        &-pinterest {
+            position: relative;
+
+            &:before {
+                @include pseudo ('./styles/img/pinterest.png', 50px, 50px);
+            }
+        }
+
+        &-user:before {
+            font-family: 'FontAwesome';
+            content: "\f007";
+            margin-right: 10px;
+            color: #c3c3c3;
+            background-color: $color-dark;
+            border-radius: 50%;
+            padding: 4px 6px;
+        }
+
+        &-time:before {
+            font-family: 'FontAwesome';
+            content: "\f017";
+            margin-right: 10px;
+            color: #c3c3c3;
+            background-color: $color-dark;
+            border-radius: 50%;
+            padding: 4px 5px;
+        }
+
+        &-comments:before {
+            font-family: 'FontAwesome';
+            content: "\f10d";
+            margin-right: 10px;
+            color: #c3c3c3;
+            background-color: $color-dark;
+            border-radius: 50%;
+            padding: 4px 5px;
+        }
+}
