@@ -7,12 +7,6 @@ import ThirdSlide from './../styles/img/thirdslide.jpg';
 import FourthSlide from './../styles/img/fourthslide.jpg';
 import FifthSlide from './../styles/img/fifthslide.jpg';
 
-const cls = 'welcome-section-img';
-
-const FirstObj = {
-  url: FirstSlide,
-};
-
 class WelcomeSection extends Component {
   render() {
     return (

@@ -1,7 +1,28 @@
 import React, { Component } from 'react';
+import TitleSection from './TitleSection.js';
+import BlogItem from './blog-posts/BlogItem.js';
+
 import FirstBlog from './../styles/img/arch.jpg';
 import SecondBlog from './../styles/img/arch2.jpg'; 
 import ThirdBlog from './../styles/img/arch3.jpg';
+
+const BlogList1 = {
+    url: FirstBlog,
+    title: 'Runway to Red Carpet: Awards Season',
+    text: 'Her father worked on oil rigs and farms that through most of the Depression. But it is a new story that has seared into my genetic.',
+}
+
+const BlogList2 = {
+    url: SecondBlog,
+    title: 'Runway to Red Carpet: Awards Season',
+    text: 'Her father worked on oil rigs and farms that through most of the Depression. But it is a new story that has seared into my genetic.',
+}
+ 
+const BlogList3 = {
+    url: ThirdBlog,
+    title: 'Runway to Red Carpet: Awards Season',
+    text: 'Her father worked on oil rigs and farms that through most of the Depression. But it is a new story that has seared into my genetic.',
+}
 
 class BlogPosts extends Component {
   render() {
@@ -9,44 +30,31 @@ class BlogPosts extends Component {
     <section className="blog-posts d-flex justify-content-center align-items-center">
         <div className="container">
 
-            <h3 className="title-section text-center">Latest blog posts</h3>
+            <header className="text-center">
+                <TitleSection name='Latest blog posts' />
+            </header>
 
             <ul className="row justify-content-center">
                 <li className="col-12 col-lg-4 blog-posts-item">
-                    <img src={FirstBlog} alt="blog-post" style={{width: 290, height: 220}} className="blog-posts-img" />
-                    <h4>
-                        <a href="pages/blog-single.html" className="blog-posts-link">Runway to Red Carpet: Awards Season</a>
-                    </h4>
-                    <p>Her father worked on oil rigs and farms that through most of the Depression. But it is a new story that
-                    has seared into my genetic.</p>
-                    <div className="d-flex justify-content-between">
-                        <a href="pages/blog-single.html" className="blog-posts-link">Learn more</a>
-                        <p className="icon-comment">450</p>
-                    </div>
+                    <BlogItem
+                        url={BlogList1.url}
+                        title={BlogList1.title}
+                        text={BlogList1.text}
+                    />
                 </li>
                 <li className="col-12 col-lg-4 blog-posts-item">
-                    <img src={SecondBlog} alt="blog-post" style={{width: 290, height: 220}}  className="blog-posts-img" />
-                    <h4>
-                        <a href="pages/blog-single.html" className="blog-posts-link">Runway to Red Carpet: Awards Season</a>
-                    </h4>
-                    <p>Her father worked on oil rigs and farms that through most of the Depression. But it is a new story that
-                    has seared into my genetic.</p>
-                    <div className="d-flex justify-content-between">
-                        <a href="pages/blog-single.html" className="blog-posts-link">Learn more</a>
-                        <p className="icon-comment">450</p>
-                    </div>
+                    <BlogItem
+                        url={BlogList2.url}
+                        title={BlogList2.title}
+                        text={BlogList2.text}
+                    />
                 </li>
                 <li className="col-12 col-lg-4 blog-posts-item">
-                    <img src={ThirdBlog} alt="blog-post" style={{width: 290, height: 220}}  className="blog-posts-img" />
-                    <h4>
-                        <a href="pages/blog-single.html" className="blog-posts-link">Runway to Red Carpet: Awards Season</a>
-                    </h4>
-                    <p>Her father worked on oil rigs and farms that through most of the Depression. But it is a new story that
-                    has seared into my genetic.</p>
-                    <div className="d-flex justify-content-between">
-                        <a href="pages/blog-single.html" className="blog-posts-link">Learn more</a>
-                        <p className="icon-comment">450</p>
-                    </div>
+                    <BlogItem
+                        url={BlogList3.url}
+                        title={BlogList3.title}
+                        text={BlogList3.text}
+                    />
                 </li>
             </ul>
         </div>
