@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Map from './styles/img/map.png';
+import Map from './../../styles/img/map.png';
 
 class FooterTop extends Component {
   render() {

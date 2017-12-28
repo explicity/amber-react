@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-import InfoSection from './InfoSection';
-import Header from './Header';
-import WelcomeSection from './WelcomeSection';
-import BuyNowSection from './BuyNowSection';
-import LastWorks from './LastWorks.js';
-import Features from './Features.js';
-import Blockquote from './Blockquote.js';
-import BlogPosts from './BlogPosts.js';
-import Experience from './Experience.js';
-import OurTeam from './OurTeam.js';
-import Footer from './Footer.js';
+import InfoSection from './components/InfoSection';
+import Header from './components/Header';
+import WelcomeSection from './components/WelcomeSection';
+import BuyNowSection from './components/BuyNowSection';
+import LastWorks from './components/LastWorks.js';
+import Features from './components/Features.js';
+import Blockquote from './components/Blockquote.js';
+import BlogPosts from './components/BlogPosts.js';
+import Experience from './components/Experience.js';
+import OurTeam from './components/OurTeam.js';
+import Footer from './components/Footer.js';
 
 class App extends Component {
   render() {

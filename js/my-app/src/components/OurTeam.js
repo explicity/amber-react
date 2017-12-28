@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import FirstTeam from './styles/img/people.jpg';
-import SecondTeam from './styles/img/people1.jpg';
-import ThirdTeam from './styles/img/people2.jpg';
-import FourthTeam from './styles/img/people3.jpg';
+import FirstTeam from './../styles/img/people.jpg';
+import SecondTeam from './../styles/img/people1.jpg';
+import ThirdTeam from './../styles/img/people2.jpg';
+import FourthTeam from './../styles/img/people3.jpg';
 
 class OurTeam extends Component {
   render() {

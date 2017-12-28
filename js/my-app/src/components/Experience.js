@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import FirstExp from './styles/img/mechanic.png';
-import SecondExp from './styles/img/tel.png';
-import ThirdExp from './styles/img/rocket.png';
+import FirstExp from './../styles/img/mechanic.png';
+import SecondExp from './../styles/img/tel.png';
+import ThirdExp from './../styles/img/rocket.png';
 
 class Experience extends Component {
   render() {

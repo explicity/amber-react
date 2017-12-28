@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import FirstBlog from './styles/img/arch.jpg';
-import SecondBlog from './styles/img/arch2.jpg';
-import ThirdBlog from './styles/img/arch3.jpg';
+import FirstBlog from './../styles/img/arch.jpg';
+import SecondBlog from './../styles/img/arch2.jpg'; 
+import ThirdBlog from './../styles/img/arch3.jpg';
 
 class BlogPosts extends Component {
   render() {
