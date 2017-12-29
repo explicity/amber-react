@@ -58,6 +58,7 @@
         background-color: $color-white;
         border: 1px solid $color-border;
         width: 136px;
+        height: 70px;
         padding: 8px 0;
         transition: all 0.5s ease-out;
 
@@ -70,6 +71,7 @@
 
         p {
             color: $footer-grey;
+            margin-bottom: 0; 
         }
     }
 

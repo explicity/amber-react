@@ -68,7 +68,14 @@
                 height: 74px; 
                 display: flex;
                 align-items: center;
-                justify-content: center;      
+                justify-content: center;
+
+                &:hover {
+                  .nav-link {
+                    text-decoration: none;
+                    color: $color-white;
+                  }
+                }      
             }
         
             .border {
@@ -176,6 +183,7 @@
         font-size: 12px; 
         text-transform: uppercase;
         color: $color-white;
+        transition: .2s;
     }
 }
 

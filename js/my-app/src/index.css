@@ -362,6 +362,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: flex;
     align-items: center;
     justify-content: center; }
+    .header .nav-item:hover .nav-link {
+      text-decoration: none;
+      color: #fff; }
   .header .border-yellow {
     border-top: 10px solid #ffae00; }
     .header .border-yellow.hvr-sweep-to-bottom:before {
@@ -418,7 +421,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .nav-link {
   font-size: 12px;
   text-transform: uppercase;
-  color: #fff; }
+  color: #fff;
+  transition: .2s; }
 
 @media (min-width: 992px) {
   .hvr-sweep-to-bottom {
@@ -815,6 +819,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-color: #fff;
     border: 1px solid #c3c3c3;
     width: 136px;
+    height: 70px;
     padding: 8px 0;
     transition: all 0.5s ease-out; }
     .cover-info h4 {
@@ -823,7 +828,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       color: #02baab;
       opacity: 1; }
     .cover-info p {
-      color: #9b9b9b; }
+      color: #9b9b9b;
+      margin-bottom: 0; }
   .cover p {
     opacity: 1; }
 
@@ -841,6 +847,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .footer-top-item {
     padding-top: 60px;
     margin-bottom: 30px; }
+  .footer-top .post-item {
+    margin-bottom: 20px; }
   .footer-link {
     color: #fff; }
     .footer-link:hover {
