@@ -5,7 +5,7 @@ import HeaderBottom from './header/HeaderBottom';
 class Header extends Component {
   render() {
     return (
-      <div className="header fixed-top">
+      <div className="header fixed-top" name="top">
         <HeaderTop />
         <HeaderBottom />
       </div>

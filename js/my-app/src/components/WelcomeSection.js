@@ -11,6 +11,7 @@ class WelcomeSection extends Component {
   render() {
     return (
       <section className="welcome-section">
+
           <div className="main">
               <div className="container text-center">
                   <header className="main-header">
@@ -48,6 +49,7 @@ class WelcomeSection extends Component {
                   </div>
               </div>
           </div>
+          
       </section>
     );
   }

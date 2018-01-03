@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-
 import _map from 'lodash/map';
 
-class SocialItem extends Component {
+class AddressItem extends Component {
   render() {
     return (
       <ul>
       	{
       		_map(this.props.obj, item => (
-      			<li className={`${item.icon}`}>
-      				<Link to='' className="list-item-social">{item.name}</Link>
+      			<li className={`list-item ${item.icon}`}>
+      				<span>{item.name}</span>
+                    <span className="color-grey">{item.text}</span>
       			</li>
       		))
       	}
@@ -19,4 +18,4 @@ class SocialItem extends Component {
   }
 }
 
-export default SocialItem;
+export default AddressItem;

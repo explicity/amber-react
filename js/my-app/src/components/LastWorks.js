@@ -1,29 +1,32 @@
 import React, { Component } from 'react';
+
 import TitleSection from './TitleSection.js';
-import WorkItem from './info-section/WorkItem.js';
+import WorkItem from './works-section/WorkItem.js';
 
 import FirstWork from './../styles/img/nature1.jpg';
 import SecondWork from './../styles/img/nature2.jpg';
 import ThirdWork from './../styles/img/nature3.jpg';
 
 
-const WorkList1 = {
-    url: FirstWork,
-    title: 'Lindemans Wine',
-    text:  'Art Direction, Web Design',
-};
+const WorkList = [
+    {
+        url: FirstWork,
+        title: 'Lindemans Wine',
+        text:  'Art Direction, Web Design',
+    },
 
-const WorkList2 = {
-    url: SecondWork,
-    title: 'Lindemans Wine',
-    text:  'Art Direction, Web Design',
-};
+    {
+        url: SecondWork,
+        title: 'Lindemans Wine',
+        text:  'Art Direction, Web Design', 
+    },
 
-const WorkList3 = {
-    url: ThirdWork,
-    title: 'Marketing materials and branding',
-    text:  'Photography, Web Design',
-};
+    {
+        url: ThirdWork,
+        title: 'Marketing materials and branding',
+        text:  'Photography, Web Design',
+    }
+]
 
 class LastWorks extends Component {
   render() {
@@ -36,41 +39,15 @@ class LastWorks extends Component {
                     trials and triumphs became at once unique and universal.</p>
                 </header>
 
-                <ul className="row works-list" id="controls">
-
-                    <li className="col-12 col-lg-4 works-list-item">
-                        <WorkItem 
-                            url={WorkList1.url}
-                            title={WorkList1.title}
-                            text={WorkList1.text}
-                        />
-                    </li>
-
-                    <li className="col-12 col-lg-4 works-list-item">
-                        <WorkItem 
-                            url={WorkList2.url}
-                            title={WorkList2.title}
-                            text={WorkList2.text}
-                        />
-                    </li>
-
-                    <li className="col-12 col-lg-4 works-list-item">
-                        <WorkItem 
-                            url={WorkList3.url}
-                            title={WorkList3.title}
-                            text={WorkList3.text}
-                        />
-                    </li>
-
-                </ul>
+                <WorkItem obj={WorkList} />
 
                 <div className="text-center">
-                    <a className="list-control" href="controls">
+                    <button className="list-control" href="controls">
                         <i className="fa fa-angle-left" aria-hidden="true"></i>
-                    </a>
-                    <a className="list-control" href="controls">
+                    </button>
+                    <button className="list-control" href="controls">
                         <i className="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
+                    </button>
                 </div>
 
             </div>

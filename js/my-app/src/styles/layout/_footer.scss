@@ -20,10 +20,6 @@
             padding-top: 60px;
             margin-bottom: 30px;
         }
-
-        & .post-item {
-            margin-bottom: 20px;
-        }
     }
 
     &-link {
@@ -36,6 +32,10 @@
 
     li {
         margin-bottom: 20px;
+
+        p {
+            margin-bottom: 5px;
+        }
     }
 
     .list-item {
@@ -64,6 +64,10 @@
     &-bottom {
         font-size: 12px;
 
+        p {
+            margin-bottom: 0;
+        }
+
         & .btn {
 
             &-lg {
@@ -87,12 +91,12 @@
 
           &-violet {
               @include border-top(15px, $color-elements);
-          }
+            }
 
           &-blue {
             @include border-top(15px, $color-ecommerse);
           }
-    }
+        }
     }
 
     @media (min-width: 992px) {

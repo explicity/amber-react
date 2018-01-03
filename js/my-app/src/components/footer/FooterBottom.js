@@ -8,7 +8,7 @@ class FooterBottom extends Component {
               <p>© 2014 StylemixThemes. All rights reserved.</p>
               <p>Powered by WordPress.</p>
           </div>
-          <a href="" className="btn btn-lg btn-primary hvr-icon-up">Back to top of page</a>
+          <a href="#top" className="btn btn-lg btn-primary hvr-icon-up">Back to top of page</a>
       </div>
     );
   }

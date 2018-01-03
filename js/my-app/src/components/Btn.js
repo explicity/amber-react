@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Btn extends Component {
   render() {
     return (
-      <a href="" className="btn btn-lg btn-primary">{this.props.name}</a>   
+      <Link to='' className="btn btn-lg btn-primary">{this.props.name}</Link>   
     );
   }
 }

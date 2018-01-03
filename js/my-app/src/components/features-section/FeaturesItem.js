@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 
+import _map from 'lodash/map';
+
 class FeaturesItem extends Component {
   render() {
     return (
-      <div>
-          <h4>{this.props.title}</h4>
-          <p>{this.props.text}</p>
-      </div>
+      <ul className="row">
+      	{
+      		_map(this.props.obj, item => (
+      			<li className={`col-12 col-md-6 features-list-item ${item.cls}`}>
+      		        <h4>{item.title}</h4>
+          			<p>{item.text}</p>
+      			</li>
+
+      		))
+      	}
+      </ul>
     );
   }
 }

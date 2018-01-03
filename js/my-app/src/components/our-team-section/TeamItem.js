@@ -5,10 +5,10 @@ import _map from 'lodash/map';
 class TeamItem extends Component {
   render() {
     return (
-      <div className='row'>
+      <ul className='row'>
         {
           _map(this.props.obj, item => (
-            <div className='col-12 col-sm-6 col-lg-3 our-team-item'>
+            <li className='col-12 col-sm-6 col-lg-3 our-team-item'>
               <div className="wrapper">
                 <figure>
                     <img src={item.url} alt="our-team" style={{width: 208, height: 280}} className="our-team-img" />
@@ -22,10 +22,10 @@ class TeamItem extends Component {
                 </figure>
                 <Btn name='Profile' />
               </div>
-            </div>
+            </li>
             ))
         }
-      </div>
+      </ul>
     );
   }
 }

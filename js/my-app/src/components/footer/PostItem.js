@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import _map from 'lodash/map';
 
 class PostItem extends Component {
   render() {
     return (
-      <div> 
+      <ul> 
       	{
       	  _map(this.props.obj, (item, index) => (
-      	  	<div className="post-item">
+      	  	<li>
   	        	<p>{item.time}</p>	
-          		<a href="" className="color-secondary">{item.link}</a>
-          	</div>
+          		<Link to='' className="color-secondary">{item.link}</Link>
+          	</li>
       	  	))	
       	}
-      </div>
+      </ul>
     );
   }
 }

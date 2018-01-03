@@ -566,6 +566,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .last-works header {
       padding: 0 50px; } }
   .last-works .list-control {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
     color: #fff;
     margin: 0 10px; }
     @media (max-width: 991px) {
@@ -847,14 +850,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .footer-top-item {
     padding-top: 60px;
     margin-bottom: 30px; }
-  .footer-top .post-item {
-    margin-bottom: 20px; }
   .footer-link {
     color: #fff; }
     .footer-link:hover {
       color: #fff; }
   .footer li {
     margin-bottom: 20px; }
+    .footer li p {
+      margin-bottom: 5px; }
   .footer .list-item {
     padding-left: 20px;
     position: relative; }
@@ -872,6 +875,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         color: #02baab; }
   .footer-bottom {
     font-size: 12px; }
+    .footer-bottom p {
+      margin-bottom: 0; }
     .footer-bottom .btn-lg {
       font-size: 8px;
       padding-right: 20px; }

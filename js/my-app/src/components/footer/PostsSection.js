@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import PostItem from './PostItem.js';
 import TitleFooter from './TitleFooter.js';
 

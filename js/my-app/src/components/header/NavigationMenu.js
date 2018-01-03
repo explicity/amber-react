@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class NavigationMenu extends Component {
   render() {
@@ -12,25 +13,25 @@ class NavigationMenu extends Component {
         <div className="collapse navbar-collapse" id="navbarsExample07">
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item hvr-sweep-to-bottom border-yellow">
-                    <a href="index.html" className="nav-link">Home</a>
+                    <Link to='/' className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item hvr-sweep-to-bottom border-orange">
-                    <a href="" className="nav-link">Typography</a>
+                    <Link to='' className="nav-link">Typography</Link>
                 </li>
                 <li className="nav-item hvr-sweep-to-bottom border-pink">
-                    <a href="pages/blog-grid.html" className="nav-link">Blog</a>
+                    <Link to='' href="pages/blog-grid.html" className="nav-link">Blog</Link>
                 </li>
                 <li className="nav-item hvr-sweep-to-bottom border-purple">
-                    <a href="" className="nav-link">Pages</a>
+                    <Link to='' className="nav-link">Pages</Link>
                 </li>
                 <li className="nav-item hvr-sweep-to-bottom border-violet">
-                    <a href="" className="nav-link">Elements</a>
+                    <Link to='' className="nav-link">Elements</Link>
                 </li>
                 <li className="nav-item hvr-sweep-to-bottom border-blue">
-                    <a href="" className="nav-link">Ecommerse</a>
+                    <Link to='' className="nav-link">Ecommerse</Link>
                 </li>
                 <li className="nav-item hvr-sweep-to-bottom border-aqua">
-                    <a href="" className="nav-link">Mega Menu</a>
+                    <Link to='' className="nav-link">Mega Menu</Link>
                 </li>
             </ul>
         </div>

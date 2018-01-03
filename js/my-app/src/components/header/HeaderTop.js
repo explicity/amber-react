@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import SearchForm from './SearchForm.js';
 import AccountSettings from './AccountSettings.js';
 

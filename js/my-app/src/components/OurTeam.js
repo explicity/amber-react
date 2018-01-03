@@ -7,7 +7,7 @@ import SecondTeam from './../styles/img/people1.jpg';
 import ThirdTeam from './../styles/img/people2.jpg';
 import FourthTeam from './../styles/img/people3.jpg';
 
-const TeamList1 = [
+const TeamList = [
     {
         url: FirstTeam,
         title: 'Manny Delgado',
@@ -41,7 +41,7 @@ class OurTeam extends Component {
 
                 <TitleSection name='Our team' />
 
-                <TeamItem obj={TeamList1} />
+                <TeamItem obj={TeamList} />
             </div>
         </section>
     );
