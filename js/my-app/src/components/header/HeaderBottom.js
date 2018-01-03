@@ -4,6 +4,43 @@ import { Link } from 'react-router-dom';
 import logo from './../../styles/img/logo.png';
 import NavigationMenu from './NavigationMenu.js';
 
+const NavigationList = [
+  {
+    cls: 'border-yellow',
+    text: 'Home',
+  },
+
+  {
+    cls: 'border-orange',
+    text: 'Typography',
+  },
+
+  {
+    cls: 'border-pink',
+    text: 'Blog',
+  },
+
+  {
+    cls: 'border-purple',
+    text: 'Pages',
+  },
+
+  {
+    cls: 'border-violet',
+    text: 'Elements',
+  },
+
+  {
+    cls: 'border-blue',
+    text: 'Ecommerse',
+  },
+
+  {
+    cls: 'border-aqua',
+    text: 'Mega Menu',
+  }
+]
+
 class HeaderBottom extends Component {
   render() {
     return (
@@ -14,7 +51,12 @@ class HeaderBottom extends Component {
                     <img src={logo} alt="logo" style={{width: 130, height: 48}} />
                 </Link>
             </h1>
-            <NavigationMenu />
+
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <NavigationMenu obj={NavigationList} />
         </div>
       </div>
     );

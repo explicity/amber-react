@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Btn from './../Btn.js';
+import Btn from './../../Btn.js';
+
 import _map from 'lodash/map';
 
 class TeamItem extends Component {

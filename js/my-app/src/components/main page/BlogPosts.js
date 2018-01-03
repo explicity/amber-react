@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import TitleSection from './TitleSection.js';
 import BlogItem from './blog-posts/BlogItem.js';
 
-import FirstBlog from './../styles/img/arch.jpg';
-import SecondBlog from './../styles/img/arch2.jpg'; 
-import ThirdBlog from './../styles/img/arch3.jpg';
+import FirstBlog from './../../styles/img/arch.jpg';
+import SecondBlog from './../../styles/img/arch2.jpg'; 
+import ThirdBlog from './../../styles/img/arch3.jpg';
 
 const BlogList = [
     {

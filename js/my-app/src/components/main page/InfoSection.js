@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Btn from './Btn.js';
+import Btn from './../Btn.js';
 import TitleSection from './TitleSection.js';
 
 class InfoSection extends Component {

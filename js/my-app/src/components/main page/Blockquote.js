@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import BlockquoteTitle from './blockquote/BlockquoteTitle.js';
 
-import FirstImg from './../styles/img/space1.jpg';
-import SecondImg from './../styles/img/space2.jpg';
-import ThirdImg from './../styles/img/space3.jpg';
-import FourthImg from './../styles/img/space4.jpg';
-import FifthImg from './../styles/img/space5.jpg';
+import FirstImg from './../../styles/img/space1.jpg';
+import SecondImg from './../../styles/img/space2.jpg';
+import ThirdImg from './../../styles/img/space3.jpg';
+import FourthImg from './../../styles/img/space4.jpg';
+import FifthImg from './../../styles/img/space5.jpg';
 
-class Blockquote extends Component {
+class Blockquote extends Component { 
   render() {
     return (
         <section className="blockquote">

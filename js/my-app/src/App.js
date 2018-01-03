@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-import InfoSection from './components/InfoSection';
+import InfoSection from './components/main page/InfoSection';
 import Header from './components/Header';
-import WelcomeSection from './components/WelcomeSection';
-import BuyNowSection from './components/BuyNowSection';
-import LastWorks from './components/LastWorks.js';
-import Features from './components/Features.js';
-import Blockquote from './components/Blockquote.js';
-import BlogPosts from './components/BlogPosts.js';
-import Experience from './components/Experience.js';
-import OurTeam from './components/OurTeam.js';
+import WelcomeSection from './components/main page/WelcomeSection';
+import BuyNowSection from './components/main page/BuyNowSection';
+import LastWorks from './components/main page/LastWorks.js';
+import Features from './components/main page/Features.js';
+import Blockquote from './components/main page/Blockquote.js';
+import BlogPosts from './components/main page/BlogPosts.js';
+import Experience from './components/main page/Experience.js';
+import OurTeam from './components/main page/OurTeam.js';
 import Footer from './components/Footer.js';
 
 class App extends Component {

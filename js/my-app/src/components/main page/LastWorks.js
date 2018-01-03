@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import TitleSection from './TitleSection.js';
 import WorkItem from './works-section/WorkItem.js';
 
-import FirstWork from './../styles/img/nature1.jpg';
-import SecondWork from './../styles/img/nature2.jpg';
-import ThirdWork from './../styles/img/nature3.jpg';
+import FirstWork from './../../styles/img/nature1.jpg';
+import SecondWork from './../../styles/img/nature2.jpg';
+import ThirdWork from './../../styles/img/nature3.jpg';
 
 
 const WorkList = [

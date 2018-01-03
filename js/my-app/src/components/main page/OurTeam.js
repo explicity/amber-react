@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import TitleSection from './TitleSection.js';
 import TeamItem from './our-team-section/TeamItem.js';
 
-import FirstTeam from './../styles/img/people.jpg';
-import SecondTeam from './../styles/img/people1.jpg';
-import ThirdTeam from './../styles/img/people2.jpg';
-import FourthTeam from './../styles/img/people3.jpg';
+import FirstTeam from './../../styles/img/people.jpg';
+import SecondTeam from './../../styles/img/people1.jpg';
+import ThirdTeam from './../../styles/img/people2.jpg';
+import FourthTeam from './../../styles/img/people3.jpg';
 
 const TeamList = [
     {

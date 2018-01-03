@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import TitleSection from './TitleSection.js';
 import ExperienceItem from './experience-section/ExperienceItem.js';
 
-import FirstExp from './../styles/img/mechanic.png';
-import SecondExp from './../styles/img/tel.png';
-import ThirdExp from './../styles/img/rocket.png';
+import FirstExp from './../../styles/img/mechanic.png';
+import SecondExp from './../../styles/img/tel.png';
+import ThirdExp from './../../styles/img/rocket.png';
 
 const ExpList1 = {
     url: FirstExp,

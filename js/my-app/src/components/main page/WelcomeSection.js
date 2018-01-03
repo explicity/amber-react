@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Btn from './Btn.js';
+import Btn from './../Btn.js';
 
-import FirstSlide from './../styles/img/firstslide.jpg';
-import SecondSlide from './../styles/img/secondslide.jpg';
-import ThirdSlide from './../styles/img/thirdslide.jpg';
-import FourthSlide from './../styles/img/fourthslide.jpg';
-import FifthSlide from './../styles/img/fifthslide.jpg';
+import FirstSlide from './../../styles/img/firstslide.jpg';
+import SecondSlide from './../../styles/img/secondslide.jpg';
+import ThirdSlide from './../../styles/img/thirdslide.jpg';
+import FourthSlide from './../../styles/img/fourthslide.jpg';
+import FifthSlide from './../../styles/img/fifthslide.jpg';
 
 class WelcomeSection extends Component {
   render() {
