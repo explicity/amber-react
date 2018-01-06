@@ -9,7 +9,7 @@ class TeamItem extends Component {
       <ul className='row'>
         {
           _map(this.props.obj, item => (
-            <li className='col-12 col-sm-6 col-lg-3 our-team-item'>
+            <li key={item.url} className='col-12 col-sm-6 col-lg-3 our-team-item'>
               <div className="wrapper">
                 <figure>
                     <img src={item.url} alt="our-team" style={{width: 208, height: 280}} className="our-team-img" />

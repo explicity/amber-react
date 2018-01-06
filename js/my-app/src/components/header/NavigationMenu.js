@@ -10,8 +10,8 @@ class NavigationMenu extends Component {
             <ul className="navbar-nav ml-auto">
                 {
                     _map(this.props.obj, item => (
-                        <li className={`nav-item hvr-sweep-to-bottom ${item.cls}`}>
-                            <Link to='/' className="nav-link">{item.text}</Link>
+                        <li key={item.text} className={`nav-item hvr-sweep-to-bottom ${item.cls}`}>
+                            <Link to={item.link} className="nav-link">{item.text}</Link>
                         </li>
                     ))
                 }

@@ -1,20 +1,31 @@
 import './include/bootstrap';
 import 'font-awesome/css/font-awesome.css';
+import './index.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter as Router,
+  Router,
   Route
-} from 'react-router-dom'
-import './index.css';
-import App from './App';
+} from 'react-router-dom';
+
+import MainPage from './components/MainPage.js';
+import BlogGridPage from './components/BlogGridPage.js';
+import BlogSinglePage from './components/BlogSinglePage.js';
+
 import registerServiceWorker from './registerServiceWorker';
 
+import createBrowserHistory from 'history/createBrowserHistory'
+
+const customHistory = createBrowserHistory() 
 
 ReactDOM.render(
-	<Router>
-		<Route path="/" component={App} />
+	<Router history={customHistory}>
+		<div>
+			<Route exact path="/" component={MainPage} />
+			<Route path="/blogs" component={BlogGridPage} />
+			<Route path="/single" component={BlogSinglePage} />
+		</div>
 	</Router>, 
 document.getElementById('root'));
 

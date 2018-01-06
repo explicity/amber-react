@@ -8,36 +8,43 @@ const NavigationList = [
   {
     cls: 'border-yellow',
     text: 'Home',
+    link: '/',
   },
 
   {
     cls: 'border-orange',
     text: 'Typography',
+    link: '/',
   },
 
   {
     cls: 'border-pink',
     text: 'Blog',
+    link: '/blogs',
   },
 
   {
     cls: 'border-purple',
     text: 'Pages',
+    link: '/',
   },
 
   {
     cls: 'border-violet',
     text: 'Elements',
+    link: '/',
   },
 
   {
     cls: 'border-blue',
     text: 'Ecommerse',
+    link: '/',
   },
 
   {
     cls: 'border-aqua',
     text: 'Mega Menu',
+    link: '/',
   }
 ]
 

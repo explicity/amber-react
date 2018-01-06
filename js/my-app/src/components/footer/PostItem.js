@@ -9,7 +9,7 @@ class PostItem extends Component {
       <ul> 
       	{
       	  _map(this.props.obj, (item, index) => (
-      	  	<li>
+      	  	<li key={item.link}>
   	        	<p>{item.time}</p>	
           		<Link to='' className="color-secondary">{item.link}</Link>
           	</li>

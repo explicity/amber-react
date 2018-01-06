@@ -1,0 +1,51 @@
+.blog {
+
+	&-section {
+		padding: 50px 0;
+	}
+
+	&-posts-item {
+		margin-bottom: 50px;
+	}
+}
+
+.pagination {
+	p {
+		width: 30px;
+		text-align: center;
+	}
+}
+
+.page {
+	
+	&-item {
+
+
+		&.active .page-link {
+			color: $color-dark;
+			background-color: $color-separator;
+			border-color: $color-separator;
+		}
+
+		&:first-child .page-link {
+			border-radius: 0;
+		}
+	}
+
+	&-link {
+		font-size: 14px;
+		font-weight: $font-normal;
+		line-height: 24px;
+		color: $color-secondary;
+		padding: 2px 12px;
+		border: none;
+		transition: 0.2s;
+
+		&:hover {
+			color: $color-hover;
+			background-color: transparent;
+		}
+	}
+
+}
+

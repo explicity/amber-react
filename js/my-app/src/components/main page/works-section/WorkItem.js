@@ -9,7 +9,7 @@ class WorkItem extends Component {
       <ul className="row works-list" id="controls">
         {
           _map(this.props.obj, item => (
-            <li className="col-12 col-lg-4 works-list-item">
+            <li key={item.url} className="col-12 col-lg-4 works-list-item">
               <figure>
                 <img src={item.url} alt="latest-work" style={{width: 290, height: 290}} className="works-list-img" />
                 <figcaption className="figcaption d-flex justify-content-between">

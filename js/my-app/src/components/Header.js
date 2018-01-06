@@ -5,10 +5,10 @@ import HeaderBottom from './header/HeaderBottom';
 class Header extends Component {
   render() {
     return (
-      <div className="header fixed-top" name="top">
+      <header className="header fixed-top" name="top">
         <HeaderTop />
         <HeaderBottom />
-      </div>
+      </header>
     );
   }
 }

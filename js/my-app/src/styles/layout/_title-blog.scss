@@ -1,0 +1,56 @@
+.title-blog {
+	background: url('./styles/img/bg-blog.jpg') no-repeat center center;
+	background-size: cover;
+	position: relative;
+	min-height: 300px;
+	margin-top: 122px;
+
+	&-main {
+		position: absolute;
+		width: 100%;
+		bottom: 45px;
+
+
+		h2 {
+			color: $color-white;
+			font-size: 36px;
+			line-height: 36px;
+			margin-bottom: 25px;
+		}
+
+
+	}
+
+	&-secondary {
+		flex-wrap: wrap;
+		color: $color-top-header;
+		font-size: 12px;
+
+		.row {
+			margin: 0;
+		}
+
+		.list-item {
+			margin-right: 20px;
+			margin-bottom: 10px;
+
+			p {	
+				line-height: 20px; 
+			}
+		}
+
+	}
+}
+
+.breadcrumb {
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	margin-bottom: 10px;
+
+	&-item a {
+		font-size: 12px;
+		font-weight: $font-normal;
+		color: $color-top-header;
+	}
+}

@@ -9,7 +9,7 @@ class TwitterItem extends Component {
       <ul>
         {
           _map(this.props.obj, item => (
-            <li className="list-item icon-tweet">
+            <li key={item.id} className="list-item icon-tweet">
                 <Link to='' className="footer-link">
                     <span>{item.title}</span>
                     <span className="color-secondary">{item.tags}</span>

@@ -9,7 +9,7 @@ class SocialItem extends Component {
       <ul>
       	{
       		_map(this.props.obj, item => (
-      			<li className={`${item.icon}`}>
+      			<li key={item.name} className={`${item.icon}`}>
       				<Link to='' className="list-item-social">{item.name}</Link>
       			</li>
       		))
