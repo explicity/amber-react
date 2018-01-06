@@ -1026,6 +1026,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 14px;
   line-height: 24px;
   color: #474e52; }
+  .single-blog p {
+    margin-bottom: 0px; }
   .single-blog-title {
     color: #474d52;
     font-size: 18px;
@@ -1099,6 +1101,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .sidebar-link:hover {
     color: #6d0fae; }
 
+.sidebar p {
+  margin-bottom: 3px; }
+
 .sidebar-categories {
   margin-bottom: 25px; }
   .sidebar-categories-list .sidebar-item:before {
@@ -1169,7 +1174,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       margin-right: 5px; }
   .tags-cloud li {
     display: inline-block;
-    margin: 0 1px 2px 0;
+    margin: 0 3px 2px 0;
     padding: 0; }
   .tags-cloud-link {
     max-width: 100px;
@@ -1183,3 +1188,57 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       color: #fff;
       background-color: #02baab;
       border-color: #02baab; }
+
+.comment-section {
+  background-color: #ebf0f3;
+  padding: 40px 0 100px 0;
+  color: #3b4954; }
+  .comment-section .add-comment form {
+    margin-bottom: 50px; }
+    .comment-section .add-comment form label {
+      display: inline-block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700; }
+  .comment-section .add-comment-input {
+    background-color: #fff;
+    box-shadow: 0 -1px 0 #9eb9c9;
+    border-color: #fff; }
+  .comment-section .add-comment .btn-lg {
+    border-width: 3px; }
+  .comment-section .add-comment .btn-primary {
+    background-color: #fff; }
+    .comment-section .add-comment .btn-primary:hover {
+      background-color: #02baab;
+      color: #fff; }
+  .comment-section-info {
+    font-size: 14px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 5px solid #fff;
+    transition: .2s; }
+    .comment-section-info header {
+      border-bottom: 1px solid #eeeeee;
+      margin-bottom: 5px; }
+      .comment-section-info header p {
+        font-size: 12px;
+        line-height: 24px;
+        color: #85939f;
+        margin-bottom: 0px; }
+      .comment-section-info header a {
+        line-height: 24px;
+        font-weight: 700;
+        color: #02baab; }
+      .comment-section-info header .reply-link {
+        opacity: 0;
+        transition: .2s; }
+    .comment-section-info p {
+      line-height: 20px; }
+    .comment-section-info.comment-reply {
+      margin-left: 30px; }
+    .comment-section-info:hover {
+      border: 5px solid #dee7ed; }
+      .comment-section-info:hover .reply-link {
+        opacity: 1; }

@@ -12,6 +12,7 @@ import {
 import MainPage from './components/MainPage.js';
 import BlogGridPage from './components/BlogGridPage.js';
 import BlogSinglePage from './components/BlogSinglePage.js';
+import PortfolioSinglePage from './components/PortfolioSinglePage.js';
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -25,6 +26,8 @@ ReactDOM.render(
 			<Route exact path="/" component={MainPage} />
 			<Route path="/blogs" component={BlogGridPage} />
 			<Route path="/single" component={BlogSinglePage} />
+			<Route path="/portfolio" component={PortfolioSinglePage} />
+
 		</div>
 	</Router>, 
 document.getElementById('root'));

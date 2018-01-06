@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import RelatedPosts from './RelatedPosts.js';
+
 import img from './../../styles/img/blog-title.jpg'; 
 import FirstImg from './../../styles/img/sepia1.jpg';
 import SecondImg from './../../styles/img/sepia2.jpg';
@@ -74,6 +76,8 @@ class ArticleSection extends Component {
               </li>
             </ul>
           </section>
+
+          <RelatedPosts obj={RelatedList} /> 
       </div>
     );
   }

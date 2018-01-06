@@ -30,7 +30,7 @@ class WorkItem extends Component {
                             </Link>
                         </li>
                         <li className="links-item">
-                            <Link to='pages/portfolio-grid.html' className="links-main">
+                            <Link to='/portfolio' className="links-main">
                                 <i className="fa fa-search-plus links-icon" aria-hidden="true"></i>
                             </Link>
                         </li>

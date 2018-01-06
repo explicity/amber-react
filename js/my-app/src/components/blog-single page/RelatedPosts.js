@@ -5,15 +5,15 @@ import _map from 'lodash/map';
 class RelatedPosts extends Component {
   render() {
     return (
-      <section class="related-posts">
-        <h3 class="single-blog-title">Related posts</h3>
-        <ul class="row">
+      <section className="related-posts">
+        <h3 className="single-blog-title">Related posts</h3>
+        <ul className="row">
           {
             _map(this.props.obj, item => (
-              <li key={item.title} class="col-12 col-md-4">
-                <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+              <li key={item.title} className="col-12 col-md-4">
+                <i className="fa fa-keyboard-o" aria-hidden="true"></i>
                 <p>{item.date}</p>
-                <a href="#" class="single-blog-link">{item.title}</a>
+                <a href="" className="single-blog-link">{item.title}</a>
               </li>
             ))
           }

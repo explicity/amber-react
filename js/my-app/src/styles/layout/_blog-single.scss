@@ -4,6 +4,10 @@
 	line-height: 24px;
 	color: $color-single-blog; 
 
+	p {
+		margin-bottom: 0px;
+	}
+
 	&-title {
 		color: $color-header-blog;
 		font-size: 18px;
@@ -43,6 +47,7 @@
 				height: auto;
 			}
 		}
+
 	}
 
 	.border-bottom {
@@ -122,6 +127,10 @@
 		&:hover {
 			color: $color-hover;
 		}
+	}
+
+	p {
+		margin-bottom: 3px;
 	}
 
 	&-categories {
@@ -239,7 +248,7 @@
 
 		li {
 			display: inline-block;
-			margin: 0 1px 2px 0;
+			margin: 0 3px 2px 0;
 			padding: 0;
 		}
 
