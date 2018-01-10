@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from './Header.js';
 import HeadingSection from './HeadingSection.js';
+import MainSection from './portfolio-single page/MainSection.js';
 import Footer from './Footer.js';
 
 class PortfolioSinglePage extends Component {
@@ -10,6 +11,7 @@ class PortfolioSinglePage extends Component {
       <div>
         <Header />
         <HeadingSection title='Project title' />
+        <MainSection />
         <Footer />
       </div>
     );

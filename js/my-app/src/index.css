@@ -29,6 +29,9 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
+p {
+  margin-bottom: 0; }
+
 .title-section {
   font-size: 36px;
   margin-bottom: 50px; }
@@ -1242,3 +1245,82 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       border: 5px solid #dee7ed; }
       .comment-section-info:hover .reply-link {
         opacity: 1; }
+
+.portfolio {
+  padding: 50px 0 100px 0;
+  color: #3b4954;
+  font-size: 14px; }
+  .portfolio .buttons .btn {
+    border-radius: 0;
+    padding: 7px 13px;
+    border: 2px solid #f5f5f6;
+    transition: .2s; }
+    .portfolio .buttons .btn-gallery {
+      background-color: transparent;
+      color: #ffae00; }
+      .portfolio .buttons .btn-gallery:hover {
+        border: 2px solid #ffae00;
+        background-color: transparent;
+        color: #ffae00; }
+  @media (max-width: 765px) {
+    .portfolio .buttons {
+      justify-content: center; } }
+  .portfolio .buttons .controls {
+    background-color: #fff;
+    border-color: #fff;
+    color: #ffae00;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px; }
+    .portfolio .buttons .controls-prev {
+      left: 20px; }
+    .portfolio .buttons .controls-next {
+      right: 20px; }
+    .portfolio .buttons .controls:hover {
+      background-color: #ffae00;
+      color: #fff;
+      border-color: #ffae00; }
+  .portfolio .btn-primary {
+    color: #ffae00;
+    border-color: #ffae00; }
+    .portfolio .btn-primary:hover {
+      color: #fff;
+      background-color: #ffae00;
+      border-color: #ffae00; }
+  .portfolio .btn-lg {
+    width: 120px;
+    border-width: 3px; }
+  .portfolio .fa-heart {
+    color: #c3c3c3;
+    margin-right: 3px; }
+  .portfolio-article-title {
+    color: #ffc600;
+    margin-bottom: 20px;
+    font-size: inherit; }
+  .portfolio-article p {
+    line-height: 24px;
+    margin-bottom: 15px; }
+
+.description {
+  font-size: 14px;
+  margin-bottom: 30px; }
+  .description-title {
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-size: inherit; }
+  .description-list-item p {
+    line-height: 30px;
+    padding-left: 20px; }
+    .description-list-item p:before {
+      content: '\f046';
+      font-family: FontAwesome;
+      display: inline-block;
+      margin-left: -20px;
+      margin-right: 10px;
+      color: #ffae00; }
