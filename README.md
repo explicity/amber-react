@@ -3,7 +3,7 @@ geekhub amber homework on react
 
 ## Installation
 ```
-cd js/my-app
+cd my-app
 npm install
 npm start
 ```
